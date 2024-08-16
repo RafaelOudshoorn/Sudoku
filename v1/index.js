@@ -3,7 +3,7 @@ var tileSelected = null;
 
 var errors = 0;
 
-var board = [
+    var board = [
     "--74916-5",
     "2---6-3-9",
     "-----7-1-",
@@ -13,7 +13,7 @@ var board = [
     "9-4-7---2",
     "67-83----",
     "81--45---"
-];
+    ];
 
 var solution = [
     "387491625",
@@ -31,12 +31,11 @@ function setErrors(err) {
 }
 
 window.onload = function () {
-    document.getElementById("game_status").innerText = "waiting";
+    document.getElementById("game_status").innerText = "Waiting";
     setGame();
 }
 
 function setGame() {
-    document.getElementById("game_status").innerText = "playing";
     setErrors(errors);
     // #digits
     for (let i = 1; i <= 9; i++){
@@ -68,10 +67,11 @@ function setGame() {
             document.getElementById("board").append(tile);
         }
     }
-    document.getElementById("game_status").innerText = "Playing";
+    
 }
 
 function selectNumber() {
+    document.getElementById("game_status").innerText = "Playing";
     if (numSelected != null) {
         numSelected.classList.remove("number-selected")
     }
