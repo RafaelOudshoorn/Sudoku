@@ -1,9 +1,8 @@
 var numSelected = null;
 var tileSelected = null;
-
 var errors = 0;
 
-    var board = [
+var board = [
     "--74916-5",
     "2---6-3-9",
     "-----7-1-",
@@ -13,8 +12,7 @@ var errors = 0;
     "9-4-7---2",
     "67-83----",
     "81--45---"
-    ];
-
+];
 var solution = [
     "387491625",
     "241568379",
@@ -26,6 +24,7 @@ var solution = [
     "675832941",
     "812945763"
 ]
+
 function setErrors(err) {
     document.getElementById("errors").innerText = err + "/3";
 }
